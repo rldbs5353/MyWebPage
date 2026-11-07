@@ -66,12 +66,11 @@ languages:
           - **Goal 2. Finish one AI service all the way to deployment**
             → Improve *Review Manager AI* from the AI Agent Challenge by moving its browser-only history to server-side storage
         skills:
-          title: "Technologies I've been working with:"
+          title: "Skills and where I actually use them:"
           items:
-            - "Python"
-            - "C"
-            - "Git / GitHub"
-            - "Hugo (static site)"
+            - "**Python · C** — used in my Algorithms and Linux Programming assignments"
+            - "**Claude Code (AI coding agent)** — used to build *Review Manager AI* in the AI Agent Challenge"
+            - "**Git / GitHub · Hugo** — used to build this portfolio site and deploy it automatically with GitHub Actions"
       education:
         title: "Education"
         items:
@@ -222,12 +221,11 @@ params:
         → AI Agent Challenge에서 만든 *리뷰 매니저 AI*의 한계였던 "브라우저에만 저장되는 기록"을 서버 저장 방식으로 바꾸는 개선 작업 진행하기
     skills:
       enable: true
-      title: "다룰 수 있는 기술:"
+      title: "다룰 수 있는 기술과 실제 사용 사례:"
       items:
-        - "Python"
-        - "C"
-        - "Git / GitHub"
-        - "Hugo (정적 사이트)"
+        - "**Python · C** — 알고리즘 과제와 리눅스 프로그래밍 과제에서 사용 중"
+        - "**Claude Code (AI 코딩 에이전트)** — AI Agent Challenge에서 *리뷰 매니저 AI* 개발에 활용"
+        - "**Git / GitHub · Hugo** — 이 포트폴리오 사이트를 만들고 GitHub Actions로 자동 배포"
 
   experience:
     enable: false
