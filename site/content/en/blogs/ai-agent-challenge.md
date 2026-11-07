@@ -92,7 +92,7 @@ It collects all analyzed reviews and shows the **sentiment distribution, average
 
 ## Results
 
-- Completed **an AI agent service from planning to development on my own** in four weeks.
+- Completed **Review Manager AI from planning to development on my own** in four weeks.
 - Presented and exhibited the result at the **NAVER 1784 Demo Day**.
 - Received an official certificate of completion from the NAVER Connect Foundation and Seoul National University.
 
@@ -102,4 +102,13 @@ It collects all analyzed reviews and shows the **sentiment distribution, average
 - AI agents speed up implementation, but **deciding what to build and verifying the result are still up to people**.
 - Handling both planning and development alone taught me the importance of **managing time and setting priorities**.
 - Mentoring showed me that in practice, **the user's perspective** matters as much as implementing features.
-- Next, I want to study how agents work in more depth and apply an AI agent I designed myself to a real service.
+
+## Limitations and Next Steps
+
+| Limitation found | Next improvement |
+| --- | --- |
+| Analysis history is **stored only in the current browser**, so the statistics are not available on other devices. | Save each logged-in user's history **on a server** so the same statistics appear on any device |
+| Only **up to 15 reviews** can be analyzed at once, so busy stores have to paste reviews in several batches. | Allow continuous batches or uploading a file at once |
+| Reviews without specific expressions are grouped under **#general**, which makes it hard to know what to improve. | Refine the keyword categories and **verify accuracy myself** by comparing results with real reviews |
+
+Next, I want to study how agents work in more depth and implement these improvements with an AI agent I design myself.
