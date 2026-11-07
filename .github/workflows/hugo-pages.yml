@@ -47,6 +47,9 @@ jobs:
         env:
           SITE_BASE_URL: ${{ steps.pages.outputs.base_url }}
         run: python .github/pages_build.py --build
+      - name: Check links and asset paths
+        # 깨진 내부 링크·이미지, 하위 경로 누락, localhost·PC 경로, 테마 예시 문구가 있으면 배포 중단
+        run: python tools/check_links.py
       - uses: actions/upload-pages-artifact@v5
         with:
           path: public
