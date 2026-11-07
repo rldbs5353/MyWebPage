@@ -66,6 +66,30 @@ Among several AI agents, I chose **Claude Code** as my development tool.
 - I judged that it writes more complete code and has better features than other agents.
 - Since I had to do everything from planning to development alone, I expected it to help a lot not only with writing code but also with fixing errors.
 
+## Output: Review Manager AI screens
+
+### 1) Tool — paste reviews
+
+![Review Manager AI tool screen: an input box for pasting up to 15 reviews, one per line, with an Analyze button and a result preview](/images/projects/review-manager/tool.webp)
+
+Owners copy reviews from delivery apps or map services and paste them **one per line, up to 15 at a time**. I added **sample buttons** such as "long wait complaint" and "friendliness praise" so first-time users can try it right away.
+
+### 2) How it works — analysis and reply drafts
+
+![Review Manager AI guide screen: a negative review tagged with taste and wait-time keywords, an improvement suggestion, and reply drafts in polite and friendly tones](/images/projects/review-manager/guide.webp)
+
+Each review gets a **sentiment (positive / negative / neutral) and keywords** (e.g. #taste, #wait time), an **improvement suggestion**, and **three reply drafts in different tones** such as polite and friendly. The owner can copy the one they like.
+
+### 3) Overall analysis — statistics and AI insight
+
+![Review Manager AI overall analysis screen: 10 reviews analyzed, average attention score 49, 40% positive, keyword bar chart, monthly sentiment trend and an AI insight](/images/projects/review-manager/analysis.webp)
+
+It collects all analyzed reviews and shows the **sentiment distribution, average attention score, frequent keywords and monthly sentiment trend**. The screen above is the result for 10 sample reviews; the AI insight points out **repeated problems and what to fix first**, e.g. "wait-time complaints (4 cases) are the most serious issue".
+
+### Evidence link
+
+- [AI Agent Challenge 2026 project hub](https://connect-aiagentchallenge-26-1.github.io/hub/) — the official page collecting participants' projects
+
 ## Results
 
 - Completed **an AI agent service from planning to development on my own** in four weeks.
