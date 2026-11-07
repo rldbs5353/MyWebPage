@@ -60,9 +60,11 @@ languages:
           **Why I'm interested**
           I've been curious about **how far the age of AI can go**. To see it for myself, I'm not just studying AI but also building real services with it.
 
-          **Learning goals**
-          - Build a solid foundation in linear algebra, probability, and statistics for AI
-          - Complete at least one AI project from data collection to deployment
+          **Learning goals and action plan**
+          - **Goal 1. Build the math foundation for AI**
+            → Summarize my *Probability and Statistics* class every week and implement the concepts (distributions, regression, etc.) in Python myself
+          - **Goal 2. Finish one AI service all the way to deployment**
+            → Improve *Review Manager AI* from the AI Agent Challenge by moving its browser-only history to server-side storage
         skills:
           title: "Technologies I've been working with:"
           items:
@@ -213,9 +215,11 @@ params:
       **관심을 갖게 된 이유**
       AI 시대가 앞으로 **얼마나 더 발전할 수 있을지** 궁금했습니다. 그 답을 직접 확인해 보고 싶어서, AI를 배우는 데서 그치지 않고 AI로 실제 서비스를 만들어 보고 있습니다.
 
-      **학습 목표**
-      - AI에 필요한 선형대수 · 확률 · 통계 기초 탄탄히 다지기
-      - 데이터 수집부터 배포까지 하나의 AI 프로젝트를 끝까지 완성하기
+      **학습 목표와 실행 계획**
+      - **목표 1. AI에 필요한 수학 기초 다지기**
+        → 이번 학기 *확률및통계* 수업 내용을 매주 정리하고, 배운 개념(확률분포, 회귀 등)을 Python 코드로 직접 구현해 보기
+      - **목표 2. 하나의 AI 서비스를 배포까지 완성하기**
+        → AI Agent Challenge에서 만든 *리뷰 매니저 AI*의 한계였던 "브라우저에만 저장되는 기록"을 서버 저장 방식으로 바꾸는 개선 작업 진행하기
     skills:
       enable: true
       title: "다룰 수 있는 기술:"
