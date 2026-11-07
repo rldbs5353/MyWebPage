@@ -74,3 +74,6 @@ other = "페이지를 찾을 수 없습니다"
 
 [min_read]
 other = "분 소요"
+
+[back_to_top]
+other = "맨 위로 이동"
