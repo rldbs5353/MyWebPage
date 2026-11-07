@@ -106,7 +106,7 @@ languages:
               - "Web"
               - "Individual Project"
           - title: "Hugo Portfolio Site"
-            content: "This website. Built with the Hugo Profile theme and automatically deployed to GitHub Pages using GitHub Actions."
+            content: "This website. Built with the Hugo Profile theme and deployed to GitHub Pages by GitHub Actions after automated link and accessibility checks."
             image: /images/projects/portfolio.svg
             featured:
               name: "Details"
@@ -115,6 +115,7 @@ languages:
               - "Hugo"
               - "GitHub Actions"
               - "GitHub Pages"
+              - "Accessibility"
             links:
               - icon: fab fa-github
                 url: https://github.com/rldbs5353/MyWebPage
@@ -279,7 +280,7 @@ params:
           - "웹 개발"
           - "개인 프로젝트"
       - title: "Hugo 포트폴리오 사이트"
-        content: "지금 보고 있는 이 사이트입니다. Hugo Profile 테마로 만들고 GitHub Actions로 GitHub Pages에 자동 배포했습니다."
+        content: "지금 보고 있는 이 사이트입니다. Hugo Profile 테마로 만들고, 배포 전에 링크·접근성 자동 검사를 거쳐 GitHub Actions로 GitHub Pages에 배포합니다."
         image: /images/projects/portfolio.svg
         featured:
           name: "자세히 보기"
@@ -288,6 +289,7 @@ params:
           - "Hugo"
           - "GitHub Actions"
           - "GitHub Pages"
+          - "접근성"
         links:
           - icon: fab fa-github
             url: https://github.com/rldbs5353/MyWebPage
