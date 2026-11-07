@@ -1,0 +1,76 @@
+# Navigation
+[nav_about]
+other = "소개"
+
+[nav_experience]
+other = "경력"
+
+[nav_education]
+other = "학력"
+
+[nav_projects]
+other = "대표 활동"
+
+[nav_achievements]
+other = "수상"
+
+[nav_contact]
+other = "연락처"
+
+[search_placeholder]
+other = "검색..."
+
+# Sections
+[about]
+other = "자기소개"
+
+[experience]
+other = "경력"
+
+[education]
+other = "학력"
+
+[projects]
+other = "대표 활동"
+
+[achievements]
+other = "수상"
+
+[contact]
+other = "연락하기"
+
+# Contact form
+[contact_email_placeholder]
+other = "이메일을 입력하세요"
+
+[contact_message_placeholder]
+other = "메시지를 입력하세요"
+
+# Footer
+[recent_posts]
+other = "최근 글"
+
+# Common terms
+[read]
+other = "읽기"
+
+[toc]
+other = "목차"
+
+[tags]
+other = "태그"
+
+[social]
+other = "공유"
+
+[copyright]
+other = "All Rights Reserved"
+
+[email_text]
+other = "이 사이트를 확인해 보세요"
+
+[page_not_found]
+other = "페이지를 찾을 수 없습니다"
+
+[min_read]
+other = "분 소요"

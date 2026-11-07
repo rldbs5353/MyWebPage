@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-label="Hugo portfolio site project">
+  <rect width="640" height="360" fill="#0f172a"/>
+  <rect x="90" y="50" width="460" height="250" rx="14" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+  <rect x="90" y="50" width="460" height="34" rx="14" fill="#334155"/>
+  <rect x="90" y="70" width="460" height="14" fill="#334155"/>
+  <circle cx="114" cy="67" r="6" fill="#f87171"/><circle cx="134" cy="67" r="6" fill="#fbbf24"/><circle cx="154" cy="67" r="6" fill="#34d399"/>
+  <g font-family="Consolas, monospace" font-size="20">
+    <text x="118" y="124" fill="#94a3b8">$ hugo server</text>
+    <text x="118" y="158" fill="#34d399">✓ Built in 120 ms</text>
+    <text x="118" y="192" fill="#94a3b8">$ git push origin main</text>
+    <text x="118" y="226" fill="#60a5fa">→ GitHub Actions</text>
+    <text x="118" y="260" fill="#34d399">✓ Deployed to GitHub Pages</text>
+  </g>
+  <text x="320" y="338" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#e2e8f0">Hugo Portfolio</text>
+</svg>
