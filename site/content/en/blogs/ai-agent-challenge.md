@@ -55,7 +55,14 @@ The program was a summer camp run by the NAVER Connect Foundation and Seoul Nati
 2. **Topic and planning** — decided on my own which problem to solve with an AI agent and planned the service's core features.
 3. **Web page design and development** — designed screens based on the service flow and developed the web page using AI agents.
 4. **Mentoring** — reviewed and improved my plan and implementation with mentoring from Team NAVER developers.
-5. **Demo Day** — presented and exhibited our service at the Demo Day held at NAVER 1784.
+5. **Demo Day** — presented and exhibited the service at the Demo Day held at NAVER 1784.
+
+### Why I chose Claude Code
+
+Among several AI agents, I chose **Claude Code** as my development tool.
+
+- I judged that it writes more complete code and has better features than other agents.
+- Since I had to do everything from planning to development alone, I expected it to help a lot not only with writing code but also with fixing errors.
 
 ## Results
 
