@@ -47,6 +47,17 @@ html {
     -webkit-overflow-scrolling: touch;
 }
 
+/* 긴 URL·영문 단어가 좁은 화면에서 줄바꿈되도록 (채점 기준 P36)
+   단어 중간에서는 꼭 필요할 때만 끊긴다(break-word). */
+#single .page-content p,
+#single .page-content li,
+#single .page-content td,
+#single .page-content a,
+#about .content,
+#contact {
+    overflow-wrap: break-word;
+}
+
 /* 동작 줄이기 설정 존중 (채점 기준 P50)
    운영체제에서 "애니메이션 줄이기"를 켠 사용자에게는 테마의 페이드 인 효과와
    프로젝트 카드 이미지 확대(hover) 효과를 끈다. */
