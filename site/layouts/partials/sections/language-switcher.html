@@ -1,0 +1,37 @@
+{{- /* 테마 원본(site/themes/template/layouts/partials/sections/language-switcher.html)을 덮어씀:
+       href="#" 링크 대신 <button> 사용 (P29), 아이콘만 보이는 모바일에서도 읽히는 이름 추가 (P46) */ -}}
+{{ if hugo.IsMultilingual }}
+<li class="nav-item navbar-text dropdown">
+    <button type="button" class="nav-link dropdown-toggle" id="languageDropdown"
+        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+        aria-label="Language / 언어: {{ .Language.LanguageName }}">
+        {{ with .Language }}
+            <span aria-hidden="true">🌐</span>
+            <span class="d-none d-md-inline">{{ .LanguageName }}</span>
+        {{ end }}
+    </button>
+    <div class="dropdown-menu shadow-lg rounded" aria-labelledby="languageDropdown">
+        {{- /* Use page translations if available, otherwise fall back to site languages */ -}}
+        {{- $translations := .AllTranslations -}}
+        {{- if eq (len $translations) 1 -}}
+            {{- /* No translations for this page, use home page translations */ -}}
+            {{- range site.Home.AllTranslations -}}
+            <a class="dropdown-item text-center nav-link{{ if eq .Language.Lang $.Language.Lang }} active{{ end }}" 
+               href="{{ .RelPermalink }}" 
+               title="{{ .Language.LanguageName }}">
+                {{ .Language.LanguageName }}
+            </a>
+            {{- end -}}
+        {{- else -}}
+            {{- /* Page has translations, use them */ -}}
+            {{- range $translations -}}
+            <a class="dropdown-item text-center nav-link{{ if eq .Language.Lang $.Language.Lang }} active{{ end }}" 
+               href="{{ .RelPermalink }}" 
+               title="{{ .Language.LanguageName }}">
+                {{ .Language.LanguageName }}
+            </a>
+            {{- end -}}
+        {{- end -}}
+    </div>
+</li>
+{{ end }}
