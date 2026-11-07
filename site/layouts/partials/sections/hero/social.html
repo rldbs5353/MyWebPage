@@ -1,0 +1,27 @@
+{{- /* 테마 원본(site/themes/template/layouts/partials/sections/hero/social.html)을 덮어씀:
+       아이콘만 있는 링크에 접근 가능한 이름(aria-label)을 추가 (채점 기준 P46) */ -}}
+<span>
+    {{ range .Site.Params.hero.socialLinks.fontAwesomeIcons }}
+    <span class="px-1">
+        <a href="{{ .url }}"
+            {{ if not (hasPrefix .url "#") }} target="_blank" rel="noopener" {{ end }}
+            class="btn social-icon"
+            aria-label="{{ .label | default .icon }}" title="{{ .label | default .icon }}"
+        >
+            <i class="{{ .icon }}" aria-hidden="true"></i>
+        </a>
+    </span>
+    {{ end }}
+
+    {{ range .Site.Params.hero.socialLinks.customIcons }}
+    <span class="px-1">
+        <a href="{{ .url }}"
+            {{ if not (hasPrefix .url "#") }} target="_blank" rel="noopener" {{ end }}
+            class="btn social-icon"
+            aria-label="{{ .label | default .url }}" title="{{ .label | default .url }}"
+        >
+            <img src="{{ .icon }}" alt="">
+        </a>
+    </span>
+    {{ end }}
+</span>

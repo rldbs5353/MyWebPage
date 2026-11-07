@@ -47,6 +47,14 @@ languages:
         button:
           name: "View Activities"
           url: "/en/blogs"
+        socialLinks:
+          fontAwesomeIcons:
+            - icon: fab fa-github
+              url: https://github.com/rldbs5353
+              label: "GitHub (rldbs5353)"
+            - icon: fas fa-envelope
+              url: mailto:ky673814@gmail.com
+              label: "Send email (ky673814@gmail.com)"
       about:
         title: "About Me"
         content: |-
@@ -195,8 +203,10 @@ params:
       fontAwesomeIcons:
         - icon: fab fa-github
           url: https://github.com/rldbs5353
+          label: "GitHub (rldbs5353)"
         - icon: fas fa-envelope
           url: mailto:ky673814@gmail.com
+          label: "이메일 보내기 (ky673814@gmail.com)"
 
   # About
   about:
