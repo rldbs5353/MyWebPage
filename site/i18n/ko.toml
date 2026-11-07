@@ -80,3 +80,12 @@ other = "맨 위로 이동"
 
 [skip_to_content]
 other = "본문으로 건너뛰기"
+
+[not_found_help]
+other = "주소가 바뀌었거나 잘못 입력되었을 수 있어요."
+
+[go_home]
+other = "홈으로 가기"
+
+[go_activities]
+other = "활동 기록 보기"

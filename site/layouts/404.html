@@ -1,0 +1,21 @@
+{{- /* 테마 원본(site/themes/template/layouts/404.html)을 덮어씀:
+       잘못된 주소로 들어온 사용자가 홈과 활동 기록으로 돌아갈 수 있는 링크 추가 (P23) */ -}}
+{{ define "head" }}
+<meta name="description" content="{{ .Site.Params.description }}">
+{{ end }}
+
+{{ define "title" }}
+{{ .Site.Params.terms.pageNotFound | default (i18n "page_not_found") }} | {{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+<div class="container py-5 text-center">
+    <img src="{{ (printf "%s404.png" (.Site.Params.staticPath | default "")) | relURL }}" alt="" class="img-fluid" width="40%">
+    <h1>{{ .Site.Params.terms.pageNotFound | default (i18n "page_not_found") }}</h1>
+    <p class="mt-3">{{ i18n "not_found_help" }}</p>
+    <p class="mt-4">
+        <a class="btn btn-outline-primary m-1" href="{{ .Site.Home.RelPermalink }}">{{ i18n "go_home" }}</a>
+        <a class="btn btn-outline-primary m-1" href="{{ "blogs/" | relLangURL }}">{{ i18n "go_activities" }}</a>
+    </p>
+</div>
+{{ end }}

@@ -4,3 +4,12 @@ other = "Back to top"
 
 [skip_to_content]
 other = "Skip to main content"
+
+[not_found_help]
+other = "The address may have changed or been typed incorrectly."
+
+[go_home]
+other = "Go to home"
+
+[go_activities]
+other = "View activities"
