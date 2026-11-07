@@ -20,6 +20,24 @@ html {
     overflow-wrap: anywhere;
 }
 
+/* 본문으로 건너뛰기 링크 (채점 기준 P41·P44)
+   평소에는 화면 밖에 두고, Tab 키로 초점을 받으면 왼쪽 위에 나타난다. */
+.skip-link {
+    position: absolute;
+    left: 1rem;
+    top: -100px;
+    z-index: 2000;
+    padding: 0.6rem 1rem;
+    background: #1d4ed8;
+    color: #ffffff !important;
+    font-weight: 600;
+    border-radius: 0 0 6px 6px;
+    text-decoration: none;
+}
+.skip-link:focus {
+    top: 0;
+}
+
 /* 키보드 초점 표시 (채점 기준 P43)
    테마가 여러 버튼·링크의 :focus 표시를 box-shadow:none / outline:none 으로 지워 두었기 때문에,
    키보드로 이동할 때(:focus-visible)만 뚜렷한 외곽선을 다시 보여 준다. 마우스 클릭 시에는 표시하지 않는다. */
