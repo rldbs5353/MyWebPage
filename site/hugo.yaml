@@ -43,7 +43,7 @@ languages:
         intro: "Hi, my name is"
         title: "Kiyun Eom."
         subtitle: "I'm learning to build AI that helps people."
-        content: "A sophomore in the Division of Computer Science and Artificial Intelligence at Jeonbuk National University (Student ID 202322980). I study machine learning with Python and the fundamentals of computing with C."
+        content: "A sophomore in the Division of Computer Science and Artificial Intelligence at Jeonbuk National University (Student ID 202322980). I'm building my computing fundamentals with Python and C."
         button:
           name: "View Activities"
           url: "/en/blogs"
@@ -55,12 +55,10 @@ languages:
 
           **Interests**
           - Machine learning and deep learning fundamentals
-          - Data preprocessing and analysis
           - Practical AI services (computer vision, natural language processing)
 
           **Learning goals**
           - Build a solid foundation in linear algebra, probability, and statistics for AI
-          - Implement and train models myself with PyTorch
           - Complete at least one AI project from data collection to deployment
         skills:
           title: "Technologies I've been working with:"
@@ -79,19 +77,19 @@ languages:
             date: "2023 - present"
             content: |-
               Currently a sophomore (Student ID 202322980).
-              - Main coursework: Programming (C), Python Programming, Data Structures
+              - Main coursework: Probability and Statistics, Basic Project, Object-Oriented Programming, Linux Programming, Algorithms, Computer Architecture
       projects:
         title: "Projects"
         items:
-          - title: "AI Connect Project"
-            content: "A team project to build and evaluate a simple classification model with Python, covering data preprocessing, training, and result analysis."
-            image: /images/projects/ai-connect.svg
+          - title: "2026 AI Agent Challenge"
+            content: "A summer camp project by NAVER Connect Foundation and SNU. I planned and developed the web page for our team's AI agent service and presented it at Demo Day."
+            image: /images/projects/ai-agent-challenge.png
             featured:
               name: "Details"
-              link: /en/blogs/ai-connect/
+              link: /en/blogs/ai-agent-challenge/
             badges:
-              - "Python"
-              - "Machine Learning"
+              - "AI Agent"
+              - "Web"
               - "Team Project"
           - title: "Hugo Portfolio Site"
             content: "This website. Built with the Hugo Profile theme and automatically deployed to GitHub Pages using GitHub Actions."
@@ -178,7 +176,7 @@ params:
     intro: "안녕하세요, 저는"
     title: "엄기윤입니다."
     subtitle: "사람에게 도움이 되는 AI를 만들고 싶은 학생입니다."
-    content: "전북대학교 컴퓨터인공지능학부 2학년(학번 202322980)입니다. Python으로 머신러닝을 공부하고, C언어로 컴퓨터의 기초를 다지고 있습니다."
+    content: "전북대학교 컴퓨터인공지능학부 2학년(학번 202322980)입니다. Python, C언어로 컴퓨터의 기초를 다지고 있습니다."
     image: /images/profile.svg
     roundImage: true
     bottomImage:
@@ -207,12 +205,10 @@ params:
 
       **관심 분야**
       - 머신러닝 · 딥러닝 기초
-      - 데이터 전처리와 분석
       - 실생활에 쓰이는 AI 서비스 (컴퓨터 비전, 자연어 처리)
 
       **학습 목표**
       - AI에 필요한 선형대수 · 확률 · 통계 기초 탄탄히 다지기
-      - PyTorch로 모델을 직접 구현하고 학습시켜 보기
       - 데이터 수집부터 배포까지 하나의 AI 프로젝트를 끝까지 완성하기
     skills:
       enable: true
@@ -239,7 +235,7 @@ params:
         date: "2023 - 현재"
         content: |-
           2학년 재학 중 (학번 202322980)
-          - 주요 수강: 프로그래밍(C), 파이썬 프로그래밍, 자료구조
+          - 주요 수강: 확률및통계, 기초프로젝트, 객체지향프로그래밍, 리눅스프로그래밍, 알고리즘, 컴퓨터구조
 
   achievements:
     enable: false
@@ -249,15 +245,15 @@ params:
     enable: true
     title: "대표 활동"
     items:
-      - title: "AI 커넥트 프로젝트"
-        content: "Python으로 데이터 전처리부터 분류 모델 학습, 결과 분석까지 진행한 팀 프로젝트입니다."
-        image: /images/projects/ai-connect.svg
+      - title: "2026 AI Agent Challenge"
+        content: "네이버 커넥트재단·서울대학교 여름 캠프에서 AI 에이전트 서비스의 웹 페이지 기획·개발을 맡고, 데모데이에서 발표·전시했습니다."
+        image: /images/projects/ai-agent-challenge.png
         featured:
           name: "자세히 보기"
-          link: /blogs/ai-connect/
+          link: /blogs/ai-agent-challenge/
         badges:
-          - "Python"
-          - "머신러닝"
+          - "AI 에이전트"
+          - "웹 개발"
           - "팀 프로젝트"
       - title: "Hugo 포트폴리오 사이트"
         content: "지금 보고 있는 이 사이트입니다. Hugo Profile 테마로 만들고 GitHub Actions로 GitHub Pages에 자동 배포했습니다."
