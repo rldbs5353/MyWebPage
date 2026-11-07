@@ -43,6 +43,7 @@ languages:
         intro: "Hi, my name is"
         title: "Kiyun Eom."
         subtitle: "I'm learning to build AI that helps people."
+        imageAlt: "Kiyun Eom's profile illustration — an avatar of a CS student with glasses sitting at a laptop"
         content: "A sophomore in the Division of Computer Science and Artificial Intelligence at Jeonbuk National University (Student ID 202322980). I'm building my computing fundamentals with Python and C."
         button:
           name: "View Activities"
@@ -191,6 +192,7 @@ params:
     subtitle: "사람에게 도움이 되는 AI를 만들고 싶은 학생입니다."
     content: "전북대학교 컴퓨터인공지능학부 2학년(학번 202322980)입니다. Python, C언어로 컴퓨터의 기초를 다지고 있습니다."
     image: /images/profile.svg
+    imageAlt: "엄기윤 프로필 일러스트 — 안경을 쓰고 노트북 앞에 앉은 컴퓨터공학 학생 아바타"
     roundImage: true
     bottomImage:
       enable: true
