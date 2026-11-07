@@ -17,13 +17,26 @@ toc: true
 | Item | Details |
 | --- | --- |
 | Activity | 2026 AI Agent Challenge |
+| Service | **Review Manager AI** — a review management web page for small business owners |
 | Type | Individual development project |
-| Tech | Using AI agents |
+| Tech | Using AI agents (Claude Code) |
 | My role | Web page planning and development |
 
 ## Purpose
 
 This program was designed to help students plan and build real AI agents themselves, and to develop their AI and software development skills through mentoring by Team NAVER developers and participation in a Demo Day.
+
+### The problem
+
+Owners of cafés and restaurants get new reviews every day, and I started from three difficulties they face:
+
+1. **Choosing a reply tone** — deciding how to reply to each review takes time, every single time.
+2. **Missing repeated complaints** — the same complaint (e.g. "the wait was too long") keeps coming back, but it is easy to miss the pattern when reading reviews one by one.
+3. **Hard to prioritize** — as reviews pile up, it gets harder to decide what to take care of first.
+
+### Goal
+
+Build a review management tool where owners simply **paste customer reviews** to get sentiment analysis, keyword extraction, repeated-issue detection and three reply drafts, and see an **overall analysis and monthly statistics** based on an AI score for each review.
 
 ## My Role
 
