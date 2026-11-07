@@ -2,4 +2,4 @@
 $hugoDir = Join-Path $env:LOCALAPPDATA 'Programs\hugo'
 if (-not (Get-Command hugo -ErrorAction SilentlyContinue)) { $env:Path += ";$hugoDir" }
 Set-Location (Join-Path $PSScriptRoot 'site')
-hugo server --baseURL http://localhost:1313/ --appendPort=false --buildDrafts --disableFastRender
+hugo server --baseURL http://localhost:1313/ --appendPort=false --buildDrafts --disableFastRender --renderToMemory
