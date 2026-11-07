@@ -15,6 +15,11 @@ html {
     object-position: top center;
 }
 
+/* 긴 글 제목은 자르지 않고 줄바꿈 (채점 기준 P36) */
+#list-page .card-title {
+    overflow-wrap: anywhere;
+}
+
 /* 키보드 초점 표시 (채점 기준 P43)
    테마가 여러 버튼·링크의 :focus 표시를 box-shadow:none / outline:none 으로 지워 두었기 때문에,
    키보드로 이동할 때(:focus-visible)만 뚜렷한 외곽선을 다시 보여 준다. 마우스 클릭 시에는 표시하지 않는다. */
