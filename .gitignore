@@ -31,6 +31,7 @@ exampleSite/themes/
 !/.github/**
 !/.github-pages.json
 /public/
+/site/public/
 /.pages-tools/
 **/node_modules/
 **/resources/_gen/
