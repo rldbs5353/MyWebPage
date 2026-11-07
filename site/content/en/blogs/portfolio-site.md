@@ -17,7 +17,8 @@ toc: true
 | Item | Details |
 | --- | --- |
 | Activity | Hugo portfolio site (class assignment) |
-| Tech | Hugo 0.143.0 (extended), Hugo Profile theme, Git, GitHub Actions, GitHub Pages |
+| Tech | Hugo 0.143.0 (extended), Hugo Profile theme, Git, GitHub Actions, GitHub Pages, Python (check scripts) |
+| Status | Live · still improving (Nov 2026 – ) |
 | Repository | [rldbs5353/MyWebPage](https://github.com/rldbs5353/MyWebPage) |
 | My role | Solo work (theme selection, configuration, content, deployment, verification) |
 
@@ -34,12 +35,25 @@ and to learn the **build and deployment process** with a static site generator (
 4. **Replacing content** — removed all of the theme's sample data and put my own information in `hugo.yaml`.
 5. **Multilingual setup** — Korean is the default language and the English pages live under `/en/`, with a language switcher.
 6. **Local verification** — previewed with `hugo server` and checked that menus, links, search and dark mode work.
+7. **Checking against the grading criteria** — compared the public criteria with the real site one by one and found accessibility problems such as icon-only links without names, missing keyboard focus styles and the list page heading structure.
+8. **Improving while keeping the theme intact** — instead of editing theme files, I added override files in `site/layouts/` and `site/static/css/custom.css`, so the theme's source and license stay untouched and my changes are clearly separated.
+9. **Automated checks** — wrote scripts that check the build for broken links/images and basic accessibility (`tools/check_links.py`, `tools/check_a11y.py`); GitHub Actions runs them before deploying and stops if anything fails.
+
+## Troubleshooting Log
+
+| Problem observed | Cause | Fix | Re-check |
+| --- | --- | --- | --- |
+| The preview did not change after editing a project card | The preview server hung while reloading the config | Restarted it and switched to rendering in memory (`--renderToMemory`) | The new card title appeared |
+| A post image would have broken on the live site | The image path pointed to my PC (`c:\Users\...`) | Moved the image to `site/static/images/` and used an `/images/...` path | Image returns 200 on the live site |
+| The deploy build command never finished | The running preview server held the build lock file | Stopped the preview first; `preview.ps1` now stops old servers before starting | Build completed normally |
+| A portrait poster was squashed in the list cards | The theme fixed only the image height (250px) | Kept the ratio with `object-fit: cover` | Ratio preserved in the list |
 
 ## Results
 
 - The site runs at `https://rldbs5353.github.io/MyWebPage/`.
 - Every push rebuilds and redeploys it automatically.
 - The introduction and activities are available in both Korean and English.
+- The site is published only after passing automated link and accessibility checks; accessibility issues went from 86 before the fixes to 0.
 
 ## What I Learned
 
