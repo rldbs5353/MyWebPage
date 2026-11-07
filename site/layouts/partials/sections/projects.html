@@ -34,7 +34,8 @@
                         {{ end }}
                         {{ if .featured }}
                         <span class="float-end">
-                            <a class="btn btn-sm" href="{{ .featured.link }}" target="_blank">
+                            <a class="btn btn-sm" href="{{ .featured.link }}"
+                               {{- if hasPrefix .featured.link "http" }} target="_blank" rel="noopener"{{ end }}>
                                 {{ .featured.name }}
                             </a>
                         </span>
