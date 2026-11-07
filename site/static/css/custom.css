@@ -7,6 +7,14 @@ html {
     scroll-padding-top: 90px;
 }
 
+/* 활동 목록 카드 이미지 비율 유지 (채점 기준 P37)
+   테마가 높이를 250px로 고정하고 object-fit을 지정하지 않아, 세로 포스터가 납작하게 찌그러졌다.
+   잘라 내더라도 비율은 유지하고, 제목이 있는 윗부분이 보이도록 위쪽 기준으로 맞춘다. */
+#list-page .card > .card-header .card-img-top {
+    object-fit: cover;
+    object-position: top center;
+}
+
 /* 키보드 초점 표시 (채점 기준 P43)
    테마가 여러 버튼·링크의 :focus 표시를 box-shadow:none / outline:none 으로 지워 두었기 때문에,
    키보드로 이동할 때(:focus-visible)만 뚜렷한 외곽선을 다시 보여 준다. 마우스 클릭 시에는 표시하지 않는다. */
