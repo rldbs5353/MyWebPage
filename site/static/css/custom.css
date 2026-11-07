@@ -38,6 +38,25 @@ html {
     top: 0;
 }
 
+/* 동작 줄이기 설정 존중 (채점 기준 P50)
+   운영체제에서 "애니메이션 줄이기"를 켠 사용자에게는 테마의 페이드 인 효과와
+   프로젝트 카드 이미지 확대(hover) 효과를 끈다. */
+@media (prefers-reduced-motion: reduce) {
+    header .navbar.animate,
+    #hero .content.animate,
+    #hero .image.animate img {
+        animation: none !important;
+    }
+    #projects .card-img-top,
+    #projects .card:hover .card-img-top {
+        transition: none !important;
+        transform: none !important;
+    }
+    html {
+        scroll-behavior: auto !important;
+    }
+}
+
 /* 키보드 초점 표시 (채점 기준 P43)
    테마가 여러 버튼·링크의 :focus 표시를 box-shadow:none / outline:none 으로 지워 두었기 때문에,
    키보드로 이동할 때(:focus-visible)만 뚜렷한 외곽선을 다시 보여 준다. 마우스 클릭 시에는 표시하지 않는다. */
