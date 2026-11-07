@@ -154,6 +154,7 @@ python tools/check_a11y.py    # lang, 페이지당 h1, 이미지 alt, 아이콘 
 | Viewer.js | <https://github.com/fengyuanchen/viewerjs> (테마에 포함) | MIT License | `site/themes/template/static/viewer/` |
 | Google Fonts (Alata, Lora, Roboto) | <https://fonts.google.com> | SIL Open Font License | 테마 `head.html`에서 불러옴 |
 | 빌드 스크립트 | 수업 제공 `prepare_github_pages.py` / `.github/pages_build.py` | 수업 자료 | `.github/` |
+| Hugo 예제 사이트 라이선스 | 테마 ZIP의 `exampleSite/` (Hugo 프로젝트) | Apache License 2.0 — 원문 [`site/LICENSE`](site/LICENSE), [`exampleSite/LICENSE`](exampleSite/LICENSE) 유지 | `site/LICENSE` |
 
 사이트 하단의 "Made with ❤ and Hugo Profile" 테마 출처 표시는 그대로 유지합니다.
 
