@@ -80,6 +80,15 @@ python .github/pages_build.py --build
 GitHub Actions가 실행하는 것과 같은 스크립트이며, `/MyWebPage/` 하위 경로에 맞게 링크·이미지 주소를 보정합니다.
 **미리보기 서버가 켜져 있으면 빌드 잠금 파일(`.hugo_build.lock`) 때문에 이 명령이 멈추므로, 먼저 미리보기를 종료하세요.**
 
+### 빌드 결과 검사
+
+```bash
+python tools/check_links.py   # 깨진 내부 링크·이미지, /MyWebPage/ 경로 누락, localhost·PC 경로, 테마 예시 문구
+python tools/check_a11y.py    # lang, 페이지당 h1, 이미지 alt, 아이콘 링크 이름, href="#"
+```
+
+둘 다 문제가 없으면 `문제 0건`을 출력하고 종료 코드 0을 돌려줍니다. GitHub Actions도 빌드 직후 같은 두 검사를 실행하며, 하나라도 실패하면 **배포하지 않습니다**.
+
 ## 4. 내용 수정 위치
 
 | 바꿀 내용 | 파일 |
@@ -104,6 +113,7 @@ GitHub Actions가 실행하는 것과 같은 스크립트이며, `/MyWebPage/` �
    git push origin main
    ```
 3. <https://github.com/rldbs5353/MyWebPage/actions> 에서 **Deploy Hugo to GitHub Pages** 실행이 자동으로 시작되고, `build`와 `deploy`가 모두 초록색(성공)이 되는지 확인합니다. (보통 1분 내외)
+   - `build` 안의 **Check links and asset paths**, **Check basic accessibility** 단계 로그에 `문제 0건`이 찍혀야 합니다. 실패하면 로그에 문제가 된 페이지와 주소가 표시됩니다.
 4. <https://rldbs5353.github.io/MyWebPage/> 를 새로고침(`Ctrl+F5`)해 변경 내용이 반영됐는지 확인합니다.
 
 > GitHub 저장소 **Settings → Pages → Build and deployment → Source**는 **GitHub Actions**로 설정되어 있어야 합니다.
@@ -123,6 +133,10 @@ GitHub Actions가 실행하는 것과 같은 스크립트이며, `/MyWebPage/` �
 │   ├── layouts/                   # 테마 덮어쓰기 (접근성 개선)
 │   ├── static/                    # 이미지, 추가 CSS
 │   └── themes/template/           # Hugo Profile 테마 원본
+├── tools/
+│   ├── check_links.py             # 빌드 결과 링크·자산 경로 검사
+│   ├── check_a11y.py              # 빌드 결과 기본 접근성 검사
+│   └── make_favicon.py            # 사이트 아이콘(fav.png) 생성
 ├── preview.ps1                    # 로컬 미리보기 실행 스크립트
 ├── AI_LOG.md                      # AI 활용 기록
 └── README.md
