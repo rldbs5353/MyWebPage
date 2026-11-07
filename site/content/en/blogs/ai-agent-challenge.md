@@ -19,6 +19,8 @@ toc: true
 | Activity | 2026 AI Agent Challenge |
 | Service | **Review Manager AI** — a review management web page for small business owners |
 | Type | Individual development project |
+| Period | Jul 6 – Jul 31, 2026 (4 weeks, online full-time) |
+| Status | **Completed (certificate received)** |
 | Tech | Using AI agents (Claude Code) |
 | My role | Web page planning and development |
 
