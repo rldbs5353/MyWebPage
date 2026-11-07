@@ -86,7 +86,7 @@ languages:
         title: "Projects"
         items:
           - title: "2026 AI Agent Challenge"
-            content: "A summer camp project by NAVER Connect Foundation and SNU. As an individual project, I planned and developed an AI agent service on my own and presented it at Demo Day."
+            content: "At the NAVER Connect Foundation × SNU summer camp (Jul 2026, completed), I planned and built 'Review Manager AI', a review management tool for small businesses, as an individual project and presented it at Demo Day."
             image: /images/projects/ai-agent-challenge.png
             featured:
               name: "Details"
@@ -254,7 +254,7 @@ params:
     title: "대표 활동"
     items:
       - title: "2026 AI Agent Challenge"
-        content: "네이버 커넥트재단·서울대학교 여름 캠프에서 AI 에이전트 서비스를 개인 프로젝트로 직접 기획·개발하고, 데모데이에서 발표·전시했습니다."
+        content: "네이버 커넥트재단·서울대학교 여름 캠프(2026.07, 수료)에서 소상공인용 리뷰 관리 도구 '리뷰 매니저 AI'를 개인 프로젝트로 기획·개발하고, 데모데이에서 발표·전시했습니다."
         image: /images/projects/ai-agent-challenge.png
         featured:
           name: "자세히 보기"
