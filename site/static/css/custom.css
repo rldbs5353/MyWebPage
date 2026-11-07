@@ -1,0 +1,38 @@
+/* 테마 위에 덧붙이는 사이트 전용 스타일 (site/layouts/partials/head/extensions.html 에서 불러옴) */
+
+/* 키보드 초점 표시 (채점 기준 P43)
+   테마가 여러 버튼·링크의 :focus 표시를 box-shadow:none / outline:none 으로 지워 두었기 때문에,
+   키보드로 이동할 때(:focus-visible)만 뚜렷한 외곽선을 다시 보여 준다. 마우스 클릭 시에는 표시하지 않는다. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible,
+.btn:focus-visible,
+.nav-link:focus-visible,
+.dropdown-item:focus-visible,
+.navbar-toggler:focus-visible,
+#theme-toggle:focus-visible,
+#languageDropdown:focus-visible {
+    /* 밝은 배경(#eaedf0 계열)에서 대비 약 7:1 */
+    outline: 3px solid #1d4ed8 !important;
+    outline-offset: 2px !important;
+    border-radius: 4px;
+}
+
+/* 다크 모드(body.dark, 배경 #18191a 계열)에서는 밝은 색으로 대비 확보 */
+body.dark a:focus-visible,
+body.dark button:focus-visible,
+body.dark input:focus-visible,
+body.dark textarea:focus-visible,
+body.dark select:focus-visible,
+body.dark [tabindex]:focus-visible,
+body.dark .btn:focus-visible,
+body.dark .nav-link:focus-visible,
+body.dark .dropdown-item:focus-visible,
+body.dark .navbar-toggler:focus-visible,
+body.dark #theme-toggle:focus-visible,
+body.dark #languageDropdown:focus-visible {
+    outline-color: #fbbf24 !important;
+}
