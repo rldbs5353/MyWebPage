@@ -79,7 +79,7 @@ languages:
           title: "Skills and where I actually use them:"
           items:
             - "**Python · C** — used in my Algorithms and Linux Programming assignments"
-            - "**Claude Code (AI coding agent)** — used to build *Review Manager AI* in the AI Agent Challenge"
+            - "**Claude Code (AI coding agent)** — used to build [Review Manager AI](/en/blogs/ai-agent-challenge/) in the AI Agent Challenge"
             - "**Git / GitHub · Hugo** — used to build this portfolio site and deploy it automatically with GitHub Actions"
       education:
         title: "Education"
@@ -239,7 +239,7 @@ params:
       title: "다룰 수 있는 기술과 실제 사용 사례:"
       items:
         - "**Python · C** — 알고리즘 과제와 리눅스 프로그래밍 과제에서 사용 중"
-        - "**Claude Code (AI 코딩 에이전트)** — AI Agent Challenge에서 *리뷰 매니저 AI* 개발에 활용"
+        - "**Claude Code (AI 코딩 에이전트)** — AI Agent Challenge에서 [리뷰 매니저 AI](/blogs/ai-agent-challenge/) 개발에 활용"
         - "**Git / GitHub · Hugo** — 이 포트폴리오 사이트를 만들고 GitHub Actions로 자동 배포"
 
   experience:
