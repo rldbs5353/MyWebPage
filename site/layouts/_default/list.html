@@ -1,6 +1,6 @@
 {{- /* 테마 원본(site/themes/template/layouts/_default/list.html)을 덮어씀 — 변경 내용은 Git 이력 참고 */ -}}
 {{ define "head" }}
-<meta name="description" content="{{ .Title }} of {{ .Site.Title }}">
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}">
 <link rel="stylesheet" href="{{ (printf "%scss/list.css" (.Site.Params.staticPath | default "")) | relURL }}" media="all">
 {{ end }}
 
