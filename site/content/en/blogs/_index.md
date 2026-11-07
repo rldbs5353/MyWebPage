@@ -1,4 +1,4 @@
 ---
 title: "Activities"
-description: "Class projects, team projects, and self-study notes"
+description: "Class projects, personal projects, and self-study notes"
 ---

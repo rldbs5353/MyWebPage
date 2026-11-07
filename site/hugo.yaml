@@ -82,7 +82,7 @@ languages:
         title: "Projects"
         items:
           - title: "2026 AI Agent Challenge"
-            content: "A summer camp project by NAVER Connect Foundation and SNU. I planned and developed the web page for our team's AI agent service and presented it at Demo Day."
+            content: "A summer camp project by NAVER Connect Foundation and SNU. As an individual project, I planned and developed an AI agent service on my own and presented it at Demo Day."
             image: /images/projects/ai-agent-challenge.png
             featured:
               name: "Details"
@@ -90,7 +90,7 @@ languages:
             badges:
               - "AI Agent"
               - "Web"
-              - "Team Project"
+              - "Individual Project"
           - title: "Hugo Portfolio Site"
             content: "This website. Built with the Hugo Profile theme and automatically deployed to GitHub Pages using GitHub Actions."
             image: /images/projects/portfolio.svg
@@ -246,7 +246,7 @@ params:
     title: "대표 활동"
     items:
       - title: "2026 AI Agent Challenge"
-        content: "네이버 커넥트재단·서울대학교 여름 캠프에서 AI 에이전트 서비스의 웹 페이지 기획·개발을 맡고, 데모데이에서 발표·전시했습니다."
+        content: "네이버 커넥트재단·서울대학교 여름 캠프에서 AI 에이전트 서비스를 개인 프로젝트로 직접 기획·개발하고, 데모데이에서 발표·전시했습니다."
         image: /images/projects/ai-agent-challenge.png
         featured:
           name: "자세히 보기"
@@ -254,7 +254,7 @@ params:
         badges:
           - "AI 에이전트"
           - "웹 개발"
-          - "팀 프로젝트"
+          - "개인 프로젝트"
       - title: "Hugo 포트폴리오 사이트"
         content: "지금 보고 있는 이 사이트입니다. Hugo Profile 테마로 만들고 GitHub Actions로 GitHub Pages에 자동 배포했습니다."
         image: /images/projects/portfolio.svg
