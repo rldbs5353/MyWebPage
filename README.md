@@ -152,4 +152,4 @@ GitHub Actions가 실행하는 것과 같은 스크립트이며, `/MyWebPage/` �
 | `site/static/images/projects/portfolio.svg` | **AI 생성** | Claude Code가 SVG 코드로 그린 썸네일 |
 | `site/static/images/projects/review-manager/*.webp` | **직접 제작** | 본인이 만든 서비스 "리뷰 매니저 AI"의 화면을 직접 캡처 |
 | `site/static/images/projects/ai-agent-challenge.png` | **외부 자료** | 2026 AI Agent Challenge 모집 포스터 (주최: 네이버 커넥트재단·서울대학교 대학연대 지역인재양성 사업단). 참가 활동 소개 목적으로만 사용 |
-| `site/static/fav.png` | **테마 원본** | Hugo Profile 테마 기본 아이콘 |
+| `site/static/fav.png` | **AI 생성** | 탭 아이콘·상단 메뉴 로고. Claude Code가 Python(Pillow)과 Windows 기본 글꼴(맑은 고딕)로 그림 — 생성 스크립트 [`tools/make_favicon.py`](tools/make_favicon.py). 테마 원본 아이콘은 `site/themes/template/static/fav.png`에 그대로 있음 |
